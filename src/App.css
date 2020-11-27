@@ -22,7 +22,7 @@
   background-color: #292f38;
   border: 1px solid white;
   width: 65%;
-  min-width: 450px;
+  min-width: 320px;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -69,7 +69,8 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
+  height: 6px;
 }
 
 /* Track */
@@ -145,8 +146,6 @@
   cursor: not-allowed;
 }
 
-
-
 .btn-delete i {
   font-size: 16px;
   color: #bbb;
@@ -160,3 +159,73 @@
   
 }
 
+@media (max-width: 479px) { 
+
+  .header{
+    height: 15%;
+    justify-content: center;
+    
+  }
+  .app-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .titles span{
+    display: none;
+  }
+
+  .list-item {
+    flex-direction: column;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 1023px){
+  .app-wrapper {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .titles span{
+    display: none;
+  }
+
+  .list-item {
+    flex-direction: column;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+}
+
+@media (max-width: 1300px){
+  .list-item {
+    flex-direction: column;
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+} 
+
+@media (max-width: 1450px){
+  .app-wrapper {
+    width: 70%;
+    padding: 15px;
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  
+
+}

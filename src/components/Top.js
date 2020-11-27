@@ -27,9 +27,9 @@ const Top = () => {
 
 
     return (
-        <div className="header d-flex flex-column justify-content-between text-white">
-            <h1>Task Manager</h1>
-            <h3>Current status: {GeneralStatus(tasks)}</h3>
+        <div className="header d-flex flex-column justify-content-around align-items-center text-white">
+            <p className="h1">Task Manager</p>
+            <p className="h4">Current status: {GeneralStatus(tasks)}</p>
         </div>
     )
 }

@@ -26,11 +26,11 @@ const Task = ({task}) => {
         <li className="list-item">
             <span style={{color: nuevoColor(task)}} >{task.title}</span>
            
-           <div>
+           <div className="d-flex justify-content-end">
                 <button
                 onClick={()=>findItem(task.id)}
                 disabled={finished}
-                className="btn-delete task-btn" id="removebtn">
+                className="btn-delete task-btn">
                    <i className="fas fa-pen"></i>
                </button>
 
